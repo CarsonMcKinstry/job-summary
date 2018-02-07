@@ -25,7 +25,7 @@ class Sidenav extends Component {
 
     return (
       <aside className="sidenav">
-        <Profile src={faceOne} alt="face-one" name="Carson" />
+        <Profile src={faceOne} alt="face-one" name="Some Dude" />
         <NavSection items={mainNavList} sectionHeading="Main" />
         <NavSection items={adminNavList} sectionHeading="Admin" />
       </aside>
