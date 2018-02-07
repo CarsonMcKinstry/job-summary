@@ -1,10 +1,113 @@
 @import "variables/colors";
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans:300,500,700,900');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans:300,500,700,900");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: "Encode Sans", sans-serif;
 }
 
+html,
+.root {
+  font-size: 16px;
+  line-height: 21px;
+}
+body,
+.article {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.3125em;
+}
+
+@for $i from 1 through 6 {
+  h#{$i},
+  .h#{$i} {
+    color: $blackBold;
+  }
+}
+
+p {
+  color: $blackNormal;
+}
+
+h1,
+.h1 {
+  font-size: 2.1875em;
+  line-height: 1.2em;
+  margin-top: 0.6em;
+  margin-bottom: 1.2em;
+}
+h2,
+.h2 {
+  font-size: 1.6875em;
+  line-height: 1.55555556em;
+  margin-top: 0.77777778em;
+  margin-bottom: 0.77777778em;
+}
+h3,
+.h3 {
+  font-size: 1.3125em;
+  line-height: 1em;
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+h4,
+.h4 {
+  font-size: 1em;
+  line-height: 1.3125em;
+  margin-top: 1.3125em;
+  margin-bottom: 0em;
+}
+h5,
+.h5 {
+  font-size: 1em;
+  line-height: 1.3125em;
+  margin-top: 1.3125em;
+  margin-bottom: 0em;
+}
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0em;
+  margin-bottom: 1.3125em;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* Let's make sure all's aligned */
+hr,
+.hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a,
+b,
+i,
+strong,
+em,
+small,
+code {
+  line-height: 0;
+}
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}

@@ -1,0 +1,40 @@
+$border: 1px solid $lightGray;
+
+.header {
+  height: 60px;
+  width: 100%;
+  border-bottom: $border;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+  height: 100%;
+  @extend %displayCenter;
+}
+
+.header-left {
+  .header-button {
+    border-right: $border;
+  }
+}
+
+.header-right {
+  .header-button {
+    border-left: $border;
+  }
+}
+
+.header-button {
+  height: 100%;
+  width: 60px;
+  @extend %displayCenter;
+  color: $blackNormal;
+
+  transition: all 0.2s ease-out;
+  &:hover {
+    background-color: $lightBlue;
+    color: $white;
+  }
+}
