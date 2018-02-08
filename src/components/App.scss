@@ -1,6 +1,7 @@
 @import "../styles/variables/colors";
 @import "Sidenav/sidenav";
 @import "Header/header";
+@import "MainView/mainview";
 
 %displayCenter {
   display: flex;
@@ -10,4 +11,7 @@
 
 .App {
   display: flex;
+  section {
+    width: 100%;
+  }
 }

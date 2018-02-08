@@ -3,13 +3,17 @@ import "./App.scss";
 
 import Sidenav from "./Sidenav/Sidenav";
 import Header from "./Header/Header";
+import MainView from "./MainView/MainView";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Sidenav />
-        <Header />
+        <section>
+          <Header />
+          <MainView />
+        </section>
       </div>
     );
   }

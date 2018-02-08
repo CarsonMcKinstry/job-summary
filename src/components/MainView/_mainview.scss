@@ -1,0 +1,34 @@
+.main-view {
+}
+
+.main-view-header {
+  height: 124px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38px;
+  h2 {
+    margin: 0 0 12px;
+  }
+  .job-location {
+    i {
+      font-size: 1.25em;
+      margin-right: 6px;
+      align-self: center;
+    }
+    span {
+      margin-right: 6px;
+    }
+    a {
+      margin-left: 6px;
+    }
+    display: flex;
+    align-items: baseline;
+  }
+  .job-post-actions {
+    display: flex;
+    .action-button {
+      margin: 0 8px;
+    }
+  }
+}
