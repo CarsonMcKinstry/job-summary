@@ -1,11 +1,16 @@
 .main-view {
-  height: 100vh;
+  flex: 1;
 }
 
 .main-view-content {
   background-color: $slate;
   padding: 38px;
   height: 100%;
+  overflow-y: scroll;
+  .info {
+    display: flex;
+    background-color: red;
+  }
 }
 
 .main-view-header {
@@ -13,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 38px 12px;
+  padding: 38px;
   h2 {
     margin: 0 0 12px;
   }

@@ -27,6 +27,10 @@ class MainView extends Component {
         <MainViewTabs tabs={tabs} />
         <section className="main-view-content">
           <Stats />
+          <div className="info">
+            <div className="meta-info" />
+            <div className="social-share" />
+          </div>
         </section>
       </article>
     );
