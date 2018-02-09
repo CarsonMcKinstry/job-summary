@@ -1,4 +1,11 @@
 .main-view {
+  height: 100vh;
+}
+
+.main-view-content {
+  background-color: $slate;
+  padding: 38px;
+  height: 100%;
 }
 
 .main-view-header {
@@ -44,7 +51,7 @@
     li {
       padding: 0 0 18px;
       color: $blackNormal;
-      margin-right: 24px;
+      margin-right: 36px;
       text-transform: uppercase;
       font-size: 0.75em;
       font-weight: bold;
@@ -58,5 +65,36 @@
     padding: 0;
     list-style: none;
     display: flex;
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  .stat-view {
+    height: 196px;
+    width: 33%;
+    position: relative;
+    border: 1px dashed blue;
+    footer {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+      .stat-footer {
+        display: inline-flex;
+        font-size: 0.75em;
+        color: $blackNormal;
+        background-color: $white;
+        border: 1px solid darken($lightGray, 20%);
+        justify-content: center;
+        align-items: center;
+        padding: 4px 12px;
+        border-radius: 2em;
+        span {
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }

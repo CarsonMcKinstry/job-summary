@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { PropTypes } from "prop-types";
 import MainHeader from "./MainHeader";
 import MainViewTabs from "./MainViewTabs";
+import Stats from "./Stats";
 
 const tabs = [
   { link: "#", primaryText: "Summary", active: true },
@@ -24,6 +25,9 @@ class MainView extends Component {
           status="open"
         />
         <MainViewTabs tabs={tabs} />
+        <section className="main-view-content">
+          <Stats />
+        </section>
       </article>
     );
   }
