@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { PropTypes } from "prop-types";
 
+import MainViewTabs from "./MainViewTabs";
+
 const MainHeader = ({ jobTitle, location, postPreviewLink, status }) => (
   <header className="main-view-header">
     <div className="job-title">

@@ -1,6 +1,17 @@
 import React, { Component } from "react";
 import { PropTypes } from "prop-types";
 import MainHeader from "./MainHeader";
+import MainViewTabs from "./MainViewTabs";
+
+const tabs = [
+  { link: "#", primaryText: "Summary", active: true },
+  { link: "#", primaryText: "Applicants", active: false },
+  { link: "#", primaryText: "Job Board", active: false },
+  { link: "#", primaryText: "Interviews", active: false },
+  { link: "#", primaryText: "Activity", active: false },
+  { link: "#", primaryText: "Broadcast", active: false },
+  { link: "#", primaryText: "Notifications", active: false }
+];
 
 class MainView extends Component {
   render() {
@@ -12,6 +23,7 @@ class MainView extends Component {
           postPreviewLink="#"
           status="open"
         />
+        <MainViewTabs tabs={tabs} />
       </article>
     );
   }
