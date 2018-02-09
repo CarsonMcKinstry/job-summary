@@ -1,12 +1,13 @@
 .main-view {
   flex: 1;
+  margin-left: 200px;
 }
 
 .main-view-content {
   background-color: $slate;
   padding: 38px;
   height: 100%;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   .info {
     display: flex;
     background-color: red;
