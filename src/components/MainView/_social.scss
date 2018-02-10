@@ -1,0 +1,23 @@
+$facebookBlue: #496ec1;
+$twitterBlue: #00abef;
+$linkedInBlue: #0381bd;
+
+.social-share {
+  .social-button {
+    color: white;
+    font-weight: 900;
+    border-radius: 2px;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 18px;
+    &.facebook {
+      background-color: $facebookBlue;
+    }
+    &.twitter {
+      background-color: $twitterBlue;
+    }
+    &.linked-in {
+      background-color: $linkedInBlue;
+    }
+  }
+}

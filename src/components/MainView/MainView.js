@@ -4,6 +4,7 @@ import MainHeader from "./MainHeader";
 import MainViewTabs from "./MainViewTabs";
 import Stats from "./Stats";
 import MetaInfo from "./MetaInfo";
+import Social from "./Social";
 
 const tabs = [
   { link: "#", primaryText: "Summary", active: true },
@@ -32,11 +33,11 @@ const positionMetaInfo = [
   {
     property: "Hiring Lead",
     description: "Another Dude"
+  },
+  {
+    property: "Approved Salary",
+    description: "$58,000"
   }
-  // {
-  //   property: "Approved Salary",
-  //   description: "$58,000"
-  // }
 ];
 
 class MainView extends Component {
@@ -54,7 +55,7 @@ class MainView extends Component {
           <Stats />
           <div className="info">
             <MetaInfo positionMetaInfo={positionMetaInfo} />
-            <div className="social-share" />
+            <Social />
           </div>
         </section>
       </article>

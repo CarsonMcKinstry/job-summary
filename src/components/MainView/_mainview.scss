@@ -1,62 +1,9 @@
-.main-view {
-  overflow: scroll;
-}
+@import "metainfo";
+@import "stats";
+@import "social";
 
-.meta-info {
-  .meta-info-header {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    height: 58px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    background-color: $grayBlue;
-    font-size: 0.75em;
-    padding: 0 24px;
-    h4 {
-      margin: 0;
-      color: $white;
-      margin-right: 12px;
-    }
-    button {
-      color: $white;
-      text-transform: uppercase;
-      padding: 8px 12px;
-      border: 0;
-      background-color: lighten($grayBlue, 5%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-      border-radius: 2px;
-      i {
-        font-size: 1.25em;
-        margin-right: 4px;
-      }
-    }
-  }
-  .meta-info-content {
-    padding: 0 24px;
-    background-color: $white;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    .meta-info-line {
-      padding: 24px 0;
-      border-bottom: 1px solid $lightGray;
-      display: flex;
-      .property {
-        text-transform: uppercase;
-        font-weight: bold;
-        color: $blackBold;
-        width: 25%;
-        font-size: 0.8em;
-      }
-      .description {
-        color: $blackNormal;
-        width: 75%;
-      }
-    }
-  }
+.main-view {
+  overflow-y: scroll;
 }
 
 .main-view-content {
@@ -110,7 +57,6 @@
 }
 
 .main-view-tabs {
-  width: 100%;
   padding: 0 38px;
   border-bottom: $border;
   ul {
@@ -134,35 +80,5 @@
     padding: 0;
     list-style: none;
     display: flex;
-  }
-}
-
-.stats {
-  display: flex;
-  justify-content: space-around;
-  .stat-view {
-    height: 196px;
-    width: 33%;
-    position: relative;
-    footer {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      text-align: center;
-      .stat-footer {
-        display: inline-flex;
-        font-size: 0.75em;
-        color: $blackNormal;
-        background-color: $white;
-        border: 1px solid darken($lightGray, 20%);
-        justify-content: center;
-        align-items: center;
-        padding: 4px 12px;
-        border-radius: 2em;
-        span {
-          text-transform: uppercase;
-        }
-      }
-    }
   }
 }

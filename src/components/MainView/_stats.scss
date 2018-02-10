@@ -1,0 +1,29 @@
+.stats {
+  display: flex;
+  justify-content: space-around;
+  .stat-view {
+    height: 196px;
+    width: 33%;
+    position: relative;
+    footer {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+      .stat-footer {
+        display: inline-flex;
+        font-size: 0.75em;
+        color: $blackNormal;
+        background-color: $white;
+        border: 1px solid darken($lightGray, 20%);
+        justify-content: center;
+        align-items: center;
+        padding: 4px 12px;
+        border-radius: 2em;
+        span {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
