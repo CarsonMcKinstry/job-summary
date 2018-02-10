@@ -3,6 +3,7 @@ import { PropTypes } from "prop-types";
 import MainHeader from "./MainHeader";
 import MainViewTabs from "./MainViewTabs";
 import Stats from "./Stats";
+import MetaInfo from "./MetaInfo";
 
 const tabs = [
   { link: "#", primaryText: "Summary", active: true },
@@ -12,6 +13,30 @@ const tabs = [
   { link: "#", primaryText: "Activity", active: false },
   { link: "#", primaryText: "Broadcast", active: false },
   { link: "#", primaryText: "Notifications", active: false }
+];
+
+const positionMetaInfo = [
+  {
+    property: "Position Title",
+    description: "Customer Service Representative"
+  },
+  { property: "Location", description: "Oklahoma City, OK" },
+  { property: "Employment Type", description: "Full-time" },
+  { property: "Experience", description: "Mid-level" },
+  { property: "Status", description: "Open" },
+  {
+    property: "Description",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, quae perspiciatis magnam magni minus blanditiis illo repellendus officiis voluptatibus accusamus quos dolor quidem dolorum veritatis a non quaerat corrupti modi."
+  },
+  {
+    property: "Hiring Lead",
+    description: "Another Dude"
+  }
+  // {
+  //   property: "Approved Salary",
+  //   description: "$58,000"
+  // }
 ];
 
 class MainView extends Component {
@@ -28,7 +53,7 @@ class MainView extends Component {
         <section className="main-view-content">
           <Stats />
           <div className="info">
-            <div className="meta-info" />
+            <MetaInfo positionMetaInfo={positionMetaInfo} />
             <div className="social-share" />
           </div>
         </section>

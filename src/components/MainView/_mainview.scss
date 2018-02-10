@@ -1,15 +1,79 @@
 .main-view {
-  flex: 1;
+  overflow: scroll;
+}
+
+.meta-info {
+  .meta-info-header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: $grayBlue;
+    font-size: 0.75em;
+    padding: 0 24px;
+    h4 {
+      margin: 0;
+      color: $white;
+      margin-right: 12px;
+    }
+    button {
+      color: $white;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      border: 0;
+      background-color: lighten($grayBlue, 5%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      border-radius: 2px;
+      i {
+        font-size: 1.25em;
+        margin-right: 4px;
+      }
+    }
+  }
+  .meta-info-content {
+    padding: 0 24px;
+    background-color: $white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    .meta-info-line {
+      padding: 24px 0;
+      border-bottom: 1px solid $lightGray;
+      display: flex;
+      .property {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $blackBold;
+        width: 25%;
+        font-size: 0.8em;
+      }
+      .description {
+        color: $blackNormal;
+        width: 75%;
+      }
+    }
+  }
 }
 
 .main-view-content {
   background-color: $slate;
   padding: 38px;
-  height: 100%;
-  // overflow-y: scroll;
   .info {
     display: flex;
-    background-color: red;
+    justify-content: space-between;
+    padding-top: 38px;
+    .meta-info {
+      width: 67%;
+      margin-right: 19px;
+    }
+    .social-share {
+      width: 33%;
+      margin-left: 19px;
+    }
   }
 }
 
@@ -80,7 +144,6 @@
     height: 196px;
     width: 33%;
     position: relative;
-    border: 1px dashed blue;
     footer {
       position: absolute;
       width: 100%;
