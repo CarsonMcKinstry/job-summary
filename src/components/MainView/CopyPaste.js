@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 import { PropTypes } from "prop-types";
 
-const CopyPaste = ({ icon, primaryText }) => (
+const CopyPaste = ({ icon, primaryText, secondaryText, copyAble }) => (
   <div className="copy-paste">
-    <p className="header">
-      <span>
-        <i className="material-icons">{icon}</i>
-        {primaryText}
-      </span>
-    </p>
+    <h3 className="copy-paste-header">
+      <i className="material-icons">{icon}</i>
+      {primaryText}
+    </h3>
+    <p className="copy-paste-body">{secondaryText}</p>
+    <div class="copy-button">
+      <input type="text" value={copyAble} />
+      <button type="button">
+        Copy
+      </button>
+    </div>
   </div>
 );
 
