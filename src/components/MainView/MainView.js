@@ -51,8 +51,16 @@ class MainView extends Component {
           status="open"
         />
         <MainViewTabs tabs={tabs} />
+
         <section className="main-view-content">
           <Stats />
+          <div className="main-view-separator">
+            <span className="horizontal-rule" />
+            <span className="expand-button">
+              <i className="material-icons">keyboard_arrow_up</i>
+            </span>
+            <span className="horizontal-rule" />
+          </div>
           <div className="info">
             <MetaInfo positionMetaInfo={positionMetaInfo} />
             <Social />
